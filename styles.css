@@ -1,5 +1,10 @@
 body {
+  --white: #fff;
+  --red: #ff5e5b;
+  --orange: #ff945b;
+
   background-color: #333;
+  font-size: 30px;
 }
 
 .scene,
@@ -18,14 +23,14 @@ body {
 }
 
 .cube {
-  --x: 100px;
+  --x: 400px;
   --y: 400px;
   --z: 400px;
+  --color: var(--white);
   top: 50%;
   left: 50%;
   width: var(--x);
   height: var(--y);
-  --color: white;
   translate: -50% -50%;
   background-color: color-mix(in display-p3, var(--color) 50%, #333);
 }
@@ -69,4 +74,11 @@ body {
   rotate: y 90deg;
   transform-origin: left center;
   translate: var(--x);
+}
+
+.chicken__head {
+  --x: 6em;
+  --y: 7em;
+  --z: 8em;
+  --color: var(--white);
 }
