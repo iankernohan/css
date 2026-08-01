@@ -20,6 +20,10 @@ body {
   top: 50%;
   left: 50%;
   transform: rotateX(65deg) rotateZ(45deg);
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .cube {
@@ -83,12 +87,20 @@ body {
   --color: var(--white);
 }
 
+.chicken__head > div::before,
+.chicken__head > div::after {
+  background-image: linear-gradient(black, black);
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 1em 2.25em;
+}
+
 .chicken__body {
   --x: 4em;
   --y: 6em;
-  --z: 4em;
+  --z: 3em;
   --color: var(--white);
-  transform: translateY(-1em) translateZ(-4em);
+  transform: translateY(-1em) translateZ(-3em);
 }
 
 .chicken__beak {
@@ -117,31 +129,85 @@ body {
 
 .chicken__tail {
   --x: 3em;
-  --y: 6em;
-  --z: 4em;
+  --y: 5em;
+  --z: 3em;
   --color: var(--white);
-  transform: translateY(-2em) translateZ(-4em);
+  transform: translateY(-2em) translateZ(-3em);
 }
 
 .chicken__wing {
-  --x: 1em;
+  --x: 1.25em;
   --y: 3.5em;
-  --z: 1.5em;
+  --z: 1.75em;
   --color: var(--white);
 }
 
 .chicken__wing-left {
-  transform: translateX(3em) translateZ(-2em) translateY(-0.5em);
+  transform: translateX(2.5em) translateZ(-2em) translateY(-0.5em);
 }
 
 .chicken__wing-right {
-  transform: translateX(-3em) translateZ(-2em) translateY(-0.5em);
+  transform: translateX(-2.5em) translateZ(-2em) translateY(-0.5em);
 }
 
 .chicken__knee {
-  --x: 1em;
-  --y: 1em;
+  --x: 0.5em;
+  --y: 0.5em;
   --z: 2em;
   --color: var(--orange);
-  transform: translateZ(-6em);
+}
+
+.chicken__knee-left {
+  transform: translateZ(-5em) translateX(1.5em) translateY(-1em);
+}
+
+.chicken__knee-right {
+  transform: translateZ(-5em) translateX(-1.5em) translateY(-1em);
+}
+
+.chicken__foot {
+  --x: 1.5em;
+  --y: 1.5em;
+  --z: 0.5em;
+  --color: var(--orange);
+}
+
+.chicken__foot-left {
+  transform: translateZ(-5.5em) translateX(1.5em) translateY(-1em);
+}
+
+.chicken__foot-right {
+  transform: translateZ(-5.5em) translateX(-1.5em) translateY(-1em);
+}
+
+.chicken__finger {
+  --x: 0.5em;
+  --y: 1em;
+  --z: 0.5em;
+  --color: var(--orange);
+}
+
+.chicken__finger-1 {
+  transform: translateZ(-5.5em) translateX(-2em);
+}
+
+.chicken__finger-2 {
+  transform: translateZ(-5.5em) translateX(-1em);
+}
+
+.chicken__finger-3 {
+  transform: translateZ(-5.5em) translateX(1em);
+}
+
+.chicken__finger-4 {
+  transform: translateZ(-5.5em) translateX(2em);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(65deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(425deg) rotateZ(360deg);
+  }
 }
