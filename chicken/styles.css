@@ -23,9 +23,9 @@ body {
 }
 
 .cube {
-  --x: 400px;
-  --y: 400px;
-  --z: 400px;
+  --x: 0px;
+  --y: 0px;
+  --z: 0px;
   --color: var(--white);
   top: 50%;
   left: 50%;
@@ -77,8 +77,71 @@ body {
 }
 
 .chicken__head {
-  --x: 6em;
-  --y: 7em;
-  --z: 8em;
+  --x: 4em;
+  --y: 4em;
+  --z: 4em;
   --color: var(--white);
+}
+
+.chicken__body {
+  --x: 4em;
+  --y: 6em;
+  --z: 4em;
+  --color: var(--white);
+  transform: translateY(-1em) translateZ(-4em);
+}
+
+.chicken__beak {
+  --x: 1em;
+  --y: 2em;
+  --z: 1em;
+  --color: var(--orange);
+  transform: translateY(2.5em) translateZ(1.5em);
+}
+
+.chicken__wattle {
+  --x: 1em;
+  --y: 1em;
+  --z: 1em;
+  --color: var(--red);
+  transform: translateY(5rem) translateZ(0.5em);
+}
+
+.chicken__comb {
+  --x: 1em;
+  --y: 2em;
+  --z: 1em;
+  --color: var(--red);
+  transform: translateZ(4em);
+}
+
+.chicken__tail {
+  --x: 3em;
+  --y: 6em;
+  --z: 4em;
+  --color: var(--white);
+  transform: translateY(-2em) translateZ(-4em);
+}
+
+.chicken__wing {
+  --x: 1em;
+  --y: 3.5em;
+  --z: 1.5em;
+  --color: var(--white);
+}
+
+.chicken__wing-left {
+  transform: translateX(3em) translateZ(-2em) translateY(-0.5em);
+}
+
+.chicken__wing-right {
+  transform: translateX(-3em) translateZ(-2em) translateY(-0.5em);
+}
+
+.chicken__knee {
+  --x: 1em;
+  --y: 1em;
+  --z: 2em;
+  --color: var(--orange);
+  transform: translateZ(-6em);
 }
