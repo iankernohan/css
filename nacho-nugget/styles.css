@@ -1,0 +1,94 @@
+body {
+  --white: #fff;
+  --red: #ff5e5b;
+  --orange: #ff945b;
+
+  background-color: #333;
+  font-size: 30px;
+}
+
+button {
+  position: fixed;
+}
+
+#button-right {
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+#button-left {
+  margin-top: 2em;
+}
+
+#button-down {
+  margin-top: 4em;
+  margin-left: 1em;
+}
+
+#button-up {
+  margin-left: 1.6em;
+}
+
+#x-display {
+  position: fixed;
+  right: 6em;
+  top: 1em;
+  font-family: "Arial";
+  font-size: 20px;
+  color: var(--white);
+}
+
+#z-display {
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  font-family: "Arial";
+  font-size: 20px;
+  color: var(--white);
+}
+
+.cube {
+  --x: 0;
+  --y: 0;
+  --z: 0;
+}
+
+.nacho__head {
+  --x: 4em;
+  --z: 6em;
+  --y: 3em;
+  --color: var(--white);
+}
+
+.nacho__body {
+  --x: 6em;
+  --y: 8em;
+  --z: 6em;
+  transform: translateY(-4em) translateZ(-4em);
+}
+
+.nacho__beak {
+  --y: 2em;
+  --z: 2em;
+  --x: 4em;
+  --color: var(--orange);
+  transform: translateY(2em) translateZ(2em);
+}
+
+.nacho__gobble {
+  --x: 2em;
+  --y: 1em;
+  --z: 2em;
+  --color: var(--red);
+  transform: translateY(2em);
+}
+
+.nacho__wing {
+  --x: 1em;
+  --z: 4em;
+  --y: 6em;
+}
+
+.nacho__wing-left {
+  transform: translateX(3em) translateY(-3em) translateZ(-2em);
+}

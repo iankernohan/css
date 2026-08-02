@@ -1,0 +1,15 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iankernohan/css.git"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "aba-css": "^1.0.1"
+  }
+}
