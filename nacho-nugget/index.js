@@ -10,7 +10,7 @@ let initialZ = 45;
 let initialX = 65;
 let intervalId;
 const fireRate = 100;
-const turnAmount = 3;
+const turnAmount = 5;
 
 let currentX = localStorage.getItem("currentX");
 let currentZ = localStorage.getItem("currentZ");

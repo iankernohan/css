@@ -1,10 +1,14 @@
 body {
-  --white: #fff;
-  --red: #ff5e5b;
-  --orange: #ff945b;
+  --white: #e4e4e4;
+  --red: #ff0000;
+  --yellow: #f6ec85;
+  --brown: #563c33; /* clothes */
+  --orange: #bd8b72; /* skin */
+  --green: #009611; /* eyes */
+  --charcoal: #332411; /* eyebrow */
 
   background-color: #333;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 button {
@@ -71,7 +75,7 @@ button {
   --y: 2em;
   --z: 2em;
   --x: 4em;
-  --color: var(--orange);
+  --color: var(--yellow);
   transform: translateY(2em) translateZ(2em);
 }
 
@@ -90,5 +94,69 @@ button {
 }
 
 .nacho__wing-left {
-  transform: translateX(3em) translateY(-3em) translateZ(-2em);
+  transform: translateX(3.5em) translateY(-4em) translateZ(-2em);
+}
+
+.nacho__wing-right {
+  transform: translateX(-3.5em) translateY(-4em) translateZ(-2em);
+}
+
+.nacho__leg {
+  --x: 1em;
+  --y: 1em;
+  --z: 3em;
+  --color: var(--yellow);
+}
+
+.nacho__leg-left {
+  transform: translateZ(-7em) translateY(-5em) translateX(1.5em);
+}
+
+.nacho__leg-right {
+  transform: translateZ(-7em) translateY(-5em) translateX(-1.5em);
+}
+
+.nacho__foot {
+  --x: 2em;
+  --y: 2em;
+  --z: 0.5em;
+  --color: var(--yellow);
+}
+
+.nacho__foot-left {
+  transform: translateZ(-7.5em) translateY(-4.5em) translateX(1.5em);
+}
+
+.nacho__foot-right {
+  transform: translateZ(-7.5em) translateY(-4.5em) translateX(-1.5em);
+}
+
+.nacho__toe {
+  --x: 0.5em;
+  --y: 0.5em;
+  --z: 0.5em;
+  --color: var(--yellow);
+}
+
+.nacho__toe-left {
+  transform: translateZ(-7.5em) translateY(-3.25em) translateX(1.5em);
+}
+
+.nacho__toe-right {
+  transform: translateZ(-7.5em) translateY(-3.25em) translateX(-1.5em);
+}
+
+.nacho__eye {
+  --x: 1em;
+  --y: 1em;
+  --z: 1em;
+  --color: black;
+}
+
+.nacho__eye-left {
+  transform: translateY(1em) translateZ(4em) translateX(1.49em);
+}
+
+.nacho__eye-right {
+  transform: translateY(1em) translateZ(4em) translateX(-1.49em);
 }
