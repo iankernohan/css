@@ -7,12 +7,13 @@ body {
   --green: #009611; /* eyes */
   --charcoal: #332411; /* eyebrow */
 
-  background-color: #333;
+  background-color: #747474;
   /* font-size: 20px; */
 }
 
 button {
   position: fixed;
+  z-index: 1000;
 }
 
 #button-right {
@@ -47,6 +48,7 @@ button {
   position: fixed;
   left: 8em;
   top: 3em;
+  z-index: 1000;
 }
 
 #x-display {
@@ -56,6 +58,7 @@ button {
   font-family: "Arial";
   font-size: 20px;
   color: var(--white);
+  z-index: 1000;
 }
 
 #z-display {
@@ -65,6 +68,7 @@ button {
   font-family: "Arial";
   font-size: 20px;
   color: var(--white);
+  z-index: 1000;
 }
 
 .cube {
@@ -176,3 +180,112 @@ button {
 .nacho__eye-right {
   transform: translateY(1em) translateZ(4em) translateX(-1.49em);
 }
+
+.nugget__head {
+  --x: 8em;
+  --y: 8em;
+  --z: 8em;
+  --color: var(--orange);
+  transform: translateY(-6em) translateZ(8em);
+}
+
+.nugget__eyebrow {
+  --x: 6em;
+  --y: 2em;
+  --z: 1em;
+  --color: var(--charcoal);
+  transform: translateY(3.1em) translateZ(-4em);
+}
+
+.nugget__eye {
+  --x: 2em;
+  --z: 1em;
+  --color: var(--white);
+}
+
+.nugget__eye-left {
+  transform: translateY(4.1em) translateZ(-5em) translateX(2em);
+}
+
+.nugget__eye-right {
+  transform: translateY(4.1em) translateZ(-5em) translateX(-2em);
+}
+
+.nugget__eye-left::after {
+  background-image: linear-gradient(var(--green), var(--green));
+  background-size: 1rem 1em;
+  background-repeat: no-repeat;
+}
+
+.nugget__eye-right::after {
+  background-image: linear-gradient(var(--green), var(--green));
+  background-size: 1rem 1em;
+  background-repeat: no-repeat;
+  background-position: 1.1em;
+}
+
+.nugget__nose {
+  --x: 2em;
+  --y: 1em;
+  --z: 3em;
+  --color: #b57b67;
+  transform: translateY(4.5em) translateZ(-8em);
+}
+
+.nugget__mouth {
+  --x: 4em;
+  --z: 1em;
+  --color: #734839;
+  transform: translateY(4.1em) translateZ(-7em);
+}
+
+.nugget__body {
+  --x: 4em;
+  --y: 2em;
+  --z: 6em;
+  --color: var(--brown);
+  transform: translateY(-6em) translateZ(2em);
+}
+
+.nugget__shoulder {
+  --x: 2em;
+  --y: 2em;
+  --z: 4em;
+  --color: #3e2b25;
+}
+
+.nugget__shoulder-left {
+  transform: translateX(3em) translateY(2.5em) translateZ(-4em) rotateX(45deg);
+}
+
+.nugget__shoulder-right {
+  transform: translateX(-3em) translateY(2.5em) translateZ(-4em) rotateX(45deg);
+}
+
+.nugget__arm {
+  --x: 2em;
+  --y: 2em;
+  --z: 4em;
+  --color: #3e2b25;
+}
+
+.nugget__arm-left {
+  transform: translateX(-3em) translateY(0em) translateZ(-3em) rotateY(90deg);
+}
+
+.nugget__arm-right {
+  transform: translateZ(-3em) rotateY(90deg);
+}
+
+/* .nugget__arm,
+.nugget__arm::before,
+.nugget__arm::after,
+.nugget__arm > div::before,
+.nugget__arm > div::after,
+.nugget__shoulder > div::before,
+.nugget__shoulder > div::after,
+.nugget__shoulder,
+.nugget__shoulder::before,
+.nugget__shoulder::after {
+  border: 2px solid red;
+} */
