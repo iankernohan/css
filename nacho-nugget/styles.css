@@ -8,7 +8,7 @@ body {
   --charcoal: #332411; /* eyebrow */
 
   background-color: #333;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 button {
@@ -31,6 +31,22 @@ button {
 
 #button-up {
   margin-left: 1.6em;
+}
+
+#button-zoom-out {
+  position: fixed;
+  left: 11em;
+}
+
+#button-zoom-in {
+  position: fixed;
+  left: 13em;
+}
+
+#zoom-range {
+  position: fixed;
+  left: 8em;
+  top: 3em;
 }
 
 #x-display {
