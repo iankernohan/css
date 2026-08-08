@@ -13,7 +13,6 @@ let initialFontSize = 20;
 let intervalId;
 const fireRate = 100;
 const turnAmount = 5;
-const fontSizeChangeAmount = 1;
 
 let currentX = localStorage.getItem("currentX");
 let currentZ = localStorage.getItem("currentZ");

@@ -2,6 +2,7 @@ const zoomIn = document.getElementById("button-zoom-in");
 const zoomOut = document.getElementById("button-zoom-out");
 const zoomRange = document.getElementById("zoom-range");
 
+const fontSizeChangeAmount = 1;
 let currentFontSize = parseInt(localStorage.getItem("currentFontSize"));
 
 if (!currentFontSize) {
